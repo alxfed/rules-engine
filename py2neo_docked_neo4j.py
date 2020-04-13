@@ -10,7 +10,7 @@ if __name__ == '__main__':
     # conf = default_db.config()
     # grap = default_db.default_graph()
     auth = ('neo4j', 'alxfed')
-    data = Graph(auth=auth, secure=False) #host='bolt://localhost:7687', encrypted=False,
+    data = Graph(auth=auth, secure=False) # host='bolt://localhost:7687', encrypted=False,
     data.delete_all()
     a = Node("Person", name="Alice", age=33)
     a.remove_label('Person')
